@@ -8,8 +8,16 @@ export const HeaderDiv = styled.header`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 135px;
+    height: 145px;
     background: #FFF;
+
+    @media screen and (min-width: 375px) and (max-width: 725px) {
+
+        & {
+            justify-content: center;
+
+        }
+    }
     
 
 
@@ -18,12 +26,27 @@ export const HeaderDiv = styled.header`
 
 export const ImageDiv = styled.div`
     margin: 22px 96px;
+    
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-family: 'Source Code Pro', monospace;
+        
 
-    img {
-        &:hover {
-            opacity: 0.7;
+        img {
+            padding-right: 20px;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
+    
+
+    
 
 
 
@@ -48,6 +71,7 @@ export const ListMenu = styled.div`
                 text-decoration: none;
                 font-size: 24px;
                 transition:  0.2s;
+                color: #000;
 
                 &:hover {
                     font-weight: bold;
@@ -57,6 +81,12 @@ export const ListMenu = styled.div`
             
         }
 
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 725px) {
+        & {
+            display: none;
+        }
     }
 
 

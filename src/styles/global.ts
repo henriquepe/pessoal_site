@@ -6,17 +6,27 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        outline: 0;
     }
 
     body {
-        height: 100vh;
-        background-color: #101010;
+        height: auto;
+        background-color: #18214C;
+        font-family: 'Source Code Pro', monospace;
     }
 
     #root {
-        height: 100vh;
+        height: auto;
     }
 
+    html {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+    }
+
+    
+    
 
 
 `;

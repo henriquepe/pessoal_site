@@ -1,19 +1,24 @@
 import React from 'react';
 import tagImg from '../../assets/tag.svg';
 
+import { Link } from 'react-router-dom';
+
 import {HeaderDiv, ImageDiv, ListMenu} from './style';
 
 function Header() {
     return (
         <HeaderDiv>
             <ImageDiv>
-                <img src={tagImg} alt="Tag HTML"/>
+                <Link to='/'>
+                    <img src={tagImg} alt="Tag HTML"/>
+                    Coding ON Saucer    
+                </Link>
             </ImageDiv>
             <ListMenu>
                 <ul>
-                    <li><a href="#"> Portfólio</a></li>
-                    <li><a href="#"> Sobre</a></li>
-                    <li><a href="#"> Contato</a></li>
+                    <li><Link to="/portfolio"> Portfólio</Link></li>
+                    <li><Link to="/about"> Sobre</Link></li>
+                    <li><Link to="/contact"> Contato</Link></li>
                 </ul>
 
             </ListMenu>
