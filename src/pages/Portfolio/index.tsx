@@ -5,7 +5,7 @@ import {PortfolioDiv} from './style';
 import Header from '../../components/Header';
 import RepoItem from '../../components/RepoItem';
 
-import api from '../../services/index';
+import api from '../../services/githubApi/index';
 
 function Portfolio() {
 
